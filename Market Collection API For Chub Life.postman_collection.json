@@ -1,0 +1,96 @@
+{
+	"info": {
+		"_postman_id": "fc4a9ee2-dc0b-4fe6-998d-158bce14e9c7",
+		"name": "Market Collection API For Chub Life",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "11225079"
+	},
+	"item": [
+		{
+			"name": "Upload Bulk Data",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/Users/ismatulmaula/Downloads/market/src/main/resources/data/data_001.txt"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/transaction/v1/upload-data",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"transaction",
+						"v1",
+						"upload-data"
+					],
+					"query": [
+						{
+							"key": "file",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Read Customer",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/transaction/v1/readCustomer",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"transaction",
+						"v1",
+						"readCustomer"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Insert Data",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\n    \"name\": \"Isma\",\n    \"dob\": \"2023-01-11\",\n    \"paymentAmount\": 150000,\n    \"productName\": \"Berlian\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/transaction/v1/insert-data",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"transaction",
+						"v1",
+						"insert-data"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

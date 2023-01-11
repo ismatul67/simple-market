@@ -1,0 +1,5 @@
+Amir|1980-12-26|150000|Product A
+ Budi|2000-02-01|200000|Product B
+ Cecile|2010-08-13|150000|Product A
+ Dimas|1980-01-20|300000|Product C
+ Erick|1999-05-31|100000|Product D
